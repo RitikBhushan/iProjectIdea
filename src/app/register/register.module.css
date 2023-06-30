@@ -1,0 +1,110 @@
+.container {
+    margin-top: 5rem;
+    height: calc(100vh - 60px);
+    width: 100%;
+    display: flex;
+}
+
+.wrapper{
+    /* width: auto; */
+    /* margin: 0 auto; */
+    flex: 1;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.wrapper > h2{
+    font-size: 32px;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.wrapper > form{
+    margin-top: 2rem;
+    width: 50%;
+    margin-left: 20%;
+    height: 70%;
+    padding: 1.5rem;
+    border: 1px solid #666;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.wrapper > form > input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 0.5rem;
+    width: 300px;
+    
+}
+
+.submitButton {
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #efefef;
+    color: #22ab22;
+    cursor: pointer;
+    transition: 150ms;
+    letter-spacing: 0.5px;
+}
+
+.submitButton:hover {
+    border-color: #22ab22;
+    background-color: #22ab22;
+    color: #efefef;
+}
+
+.registerNow {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-top: 1.75rem;
+    cursor: pointer;
+    text-align: center;
+    transition: 150ms;
+}
+
+.registerNow:hover {
+    color: #555;
+}
+.img{
+    width: 70%;
+    height: 100%;
+}
+.logindiv{
+    width: 50%;
+    padding-bottom: 50px;
+   
+}
+@media screen and (max-width: 520px) {
+ 
+    .logindiv{
+        display: none;
+    }
+    .wrapper{
+        /* width: auto; */
+        /* margin: 0 auto; */
+        flex: 1;
+        width: 100%;
+        padding-right: 100px;
+        padding-left: 0;
+    }
+    .wrapper > form{
+        margin-top: 0rem;
+        width: 100%; 
+    }
+    .wrapper > form > input{
+        
+        width: 250px;
+        
+    }
+}
